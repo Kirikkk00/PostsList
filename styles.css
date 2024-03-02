@@ -1,0 +1,289 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+.header {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    height: 5%;
+    min-height: 25px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid;
+}
+.form {
+    margin-top: 10%;
+}
+.buttons {
+    min-height: 25px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.buttons a {
+    display: flex;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+    border: 1px solid;
+    text-decoration: none;
+    text-align: center;
+}
+.buttons a:hover {
+    text-decoration: underline;
+    color: red;
+}
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+} 
+.form-in-center {
+    padding: 5px;
+    background-color:rgb(255, 255, 255);
+    width: 40%;
+    min-width: 160px;
+    border: 1px solid;
+    border-radius: 15px;
+}
+.in-form-group {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+.in-form-group input {
+    width: 80%
+}
+body {
+    background-color:rgb(248, 222, 217);
+}
+.button-submit{
+    width: 100%;
+}
+.button-submit input {
+    width: 100%;
+}
+.form-button {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.add-post {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+.add-post input {
+    width: 25%;
+    font-size: 110%;
+    border: 1px solid;
+    border-radius: 12px;
+    background-color: white;
+    cursor: pointer;
+}
+.add-post input:hover {
+    background-color: rgb(230, 220, 220);
+}
+.add-post input:active {
+    background-color: rgb(230, 200, 200);
+    color: rgb(128, 0, 0);
+}
+/* Add post user */
+.hidden {
+    display: none;
+}
+.close-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 2px 8px;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 0 12px 0 12px;
+    user-select: none;
+}
+.close-button:hover {
+    background-color: red;
+}
+.close-button:active {
+    background-color: rgba(255, 0, 0, 0.5);
+}
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+#postForm {
+    width: 40%;
+    height: 30%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    z-index: 2;
+    border: 1px solid;
+    border-radius: 12px;
+}
+@media (min-width: 900px) {
+    #postForm {
+        width: 20%;
+    }
+    .form-in-center {
+        width: 20%;
+    }
+    .add-post input {
+        width: 15%;
+    }
+}
+@media (max-width: 600px) {
+    #postForm {
+        width: 60%;
+    }
+    .form-in-center {
+        width: 60%;
+    }
+    .add-post input {
+        width: 50%;
+    }
+}
+@media (min-width: 1500px) {
+    #postForm {
+        width: 15%;
+    }
+    .form-in-center {
+        width: 15%;
+    }
+    .add-post input {
+        width: 10%;
+    }
+}
+.postFormForm {
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column; 
+}
+.postFormForm textarea {
+    flex: 1;
+    resize: none;
+}
+.postFormDiv {
+    height: 95%;
+    margin-top: 14px;
+    padding-bottom: 14px;
+}
+/*go out from user account*/
+.hidden-exit {
+    display: none;
+}
+#overlay-exit {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+#postForm-exit {
+  width: 40%;
+  height: 7%;
+  position: fixed;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  z-index: 2;
+  border: 1px solid;
+  border-radius: 12px;
+}
+.close-button-exit {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 2px 8px;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 0 12px 0 12px;
+    user-select: none;
+}
+.close-button-exit:hover {
+    background-color: red;
+}
+.close-button-exit:active {
+    background-color: rgba(255, 0, 0, 0.5);
+}
+@media (min-width: 900px) {
+    #postForm-exit {
+        width: 20%;
+    }
+}
+@media (max-width: 600px) {
+    #postForm-exit {
+        width: 60%;
+    }
+}
+@media (min-width: 1500px) {
+    #postForm-exit {
+        width: 15%;
+    }
+}
+@media (max-height: 700px) {
+    #postForm-exit {
+        height: 10%;
+    }
+}
+@media (max-height: 500px) {
+    #postForm-exit {
+        height: 15%;
+    }
+}
+.exit {
+    cursor: pointer;
+    user-select: none;
+}
+.posts-user {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.post-div {
+    width: 30%;
+}
+.post {
+    display: flex;
+    margin-top: 10px;
+    background-color: aliceblue;
+    border: 1px solid;
+    border-radius: 12px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5px;
+}
+.post-title {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    background-color: rgb(248, 222, 217);
+    border-radius: 12px;
+    padding: 5px;
+    
+}
+.text-post {
+    padding: 5px;
+}

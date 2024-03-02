@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Autorisation</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="buttons">
+                <a class ="exit">Exit</a>
+            </div>
+        </header>
+
+        <!-- add post button -->
+        <div id="add" class="posts">
+            <div class="add-post">
+                <input type="button" value="+">
+            </div>
+        </div>
+
+        <!-- form leave go out user -->
+        <div id="overlay-exit" class="hidden-exit"></div>
+        <div id="postForm-exit" class="hidden-exit">
+            <div class="close-button-exit">&times</div>
+            <div class="postFormDiv">
+                <div class="in-form-group">
+                    <label for="postLabel">Are you sure you want to go out?</label>
+                </div>
+                <div class="in-form-group">
+                    <div class="form-button">
+                        <div class="button-submit">
+                            <input class="yes-button" type="button" value="Yes">
+                        </div>
+                        <div class="button-submit">
+                            <input class="no-button" type="button" value="No">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- form add post -->
+        <div id="overlay" class="hidden"></div>
+        <div id="postForm" class="hidden">
+            <div class="close-button">&times</div>
+            <div class="postFormDiv">
+                <form id="postFormForm" class="postFormForm">
+                    <label for="postLabel">Label Post:</label>
+                    <input type="text" id="postLabel" name="postLabel">
+                    <label for="postText">Post text:</label>
+                    <textarea id="postText" name="postText"></textarea>
+                    <input type="submit" value="Add">
+                </form>
+            </div>
+        </div>
+        <!-- posts -->
+        <div class="posts-user">
+            
+        </div>
+
+
+    </body>
+    <script src="addPost.js"></script>
+</html>
